@@ -17,7 +17,8 @@ ssh $HOST "sudo rm -rf /tmp/_site"
 scp -r _site $HOST:/tmp/_site
 
 ssh $HOST <<EOF
-    sudo chown -R www-data:www-data /tmp/_site \
+    sudo ln -s /opt/pdf /tmp/_site/pdf \
+    && sudo chown -R www-data:www-data /tmp/_site \
     && sudo rm -rf /opt/_site \
     && sudo mv /tmp/_site /opt/_site
 EOF
