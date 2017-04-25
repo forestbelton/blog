@@ -1,0 +1,8 @@
+---
+title: Ludum Dare 38
+---
+This past weekend, I participated in [Ludum Dare 38](http://ludumdare.com/compo/) with [Kyle Sammons](https://github.com/centip3de), a friend of mine. Kyle mainly handled the programming while I took on some of the creative aspects. The "story" revolves around a child hopping between paintings, solving puzzles and jumping between platforms.
+
+I figured it would be fun to break out of my comfort zone and try my hand at [pixel art](https://en.wikipedia.org/wiki/Pixel_art) since I spend most of my time programming. While I didn't do all of the art for the game, there was enough to give me main credit. If you look closely, you can infer the order in which the sprites were drawn by their overall quality.
+
+If you'd like to give the game a shot, [it's available here](https://homolo.gy/secret).
