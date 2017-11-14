@@ -100,7 +100,7 @@ A(x) &= \frac{x}{(1-x)^3}
 \end{align*}
 $$
 
-which gives the following formula after partial fraction expansion (ommitted):
+which gives the following formula after partial fraction expansion (omitted):
 
 $$
 a_n = \frac{n(n+1)}{2}
