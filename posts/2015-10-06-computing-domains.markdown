@@ -20,20 +20,20 @@ We start with the simple cases, and work our way up inductively. Here, $x$ will 
 Constant and identity functions are defined across their entire domain, so we have:
 
 $$
-\begin{align\*}
-D(c) &= \mathbb{R} \\\\
+\begin{align*}
+D(c) &= \mathbb{R} \\
 D(x) &= \mathbb{R}
-\end{align\*}
+\end{align*}
 $$
 
 If we know $D(f)$ and $D(g)$, what can we say about $D(f + g)$? Well, any value that makes $f$ undefined would also make $f + g$ undefined, and the same goes for $g$. This is also the case for $f - g$ and $f \times g$, so we have:
 
 $$
-\begin{align\*}
-D(f + g) &= D(f) \cap D(g) \\\\
-D(f - g) &= D(f) \cap D(g) \\\\
-D(f \times g) &= D(f) \cap D(g) \\\\
-\end{align\*}
+\begin{align*}
+D(f + g) &= D(f) \cap D(g) \\
+D(f - g) &= D(f) \cap D(g) \\
+D(f \times g) &= D(f) \cap D(g) \\
+\end{align*}
 $$
 
 What about $f / g$? We can apply the same reasoning above, but we also need to exclude the values which satisfy $g(x)=0$.
@@ -55,23 +55,23 @@ Examples
 This should give us all the tools we need to start computing. Applying the definition to $f(x) = \frac{1}{x}$, we get:
 
 $$
-\begin{align\*}
-D\left(\frac{1}{x}\right) &= D(1) \cap D(x) \cap \left(\mathbb{R} - Z(x)\right) \\\\
-&= \mathbb{R} \cap \mathbb{R} \cap \left(\mathbb{R} - \left\\\{0 \right\\\}\right) \\\\
-&= \mathbb{R} - \left\\\{0\right\\\} \\\\
+\begin{align*}
+D\left(\frac{1}{x}\right) &= D(1) \cap D(x) \cap \left(\mathbb{R} - Z(x)\right) \\
+&= \mathbb{R} \cap \mathbb{R} \cap \left(\mathbb{R} - \left\{0 \right\}\right) \\
+&= \mathbb{R} - \left\{0\right\} \\
 &= \left(-\infty, 0\right) \cup \left(0, \infty\right)
-\end{align\*}
+\end{align*}
 $$
 
 This even works for more complicated examples. For instance, assuming we already know the domain of $\sqrt{x}$:
 
 $$
-\begin{align\*}
-D\left(\sqrt{x^2}\right) &= D\left(x^2\right) - \left(I\left(x^2\right) - D\left(\sqrt{x}\right)\right) \\\\
-&= \mathbb{R} - \left(\left[0, \infty\right) - \left[0, \infty\right)\right) \\\\
-&= \mathbb{R} - \emptyset \\\\
+\begin{align*}
+D\left(\sqrt{x^2}\right) &= D\left(x^2\right) - \left(I\left(x^2\right) - D\left(\sqrt{x}\right)\right) \\
+&= \mathbb{R} - \left(\left[0, \infty\right) - \left[0, \infty\right)\right) \\
+&= \mathbb{R} - \emptyset \\
 &= \mathbb{R}
-\end{align\*}
+\end{align*}
 $$
 
 Conclusion

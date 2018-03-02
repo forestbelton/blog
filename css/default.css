@@ -1,4 +1,4 @@
-body {
+/*body {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -77,4 +77,118 @@ pre > code {
 
 #content {
     margin-bottom: 200px;
+}
+*/
+
+html, body {
+    color: #222f3e;
+    font-family: 'Work Sans', sans-serif;
+}
+
+pre {
+    font-family: monospace;
+}
+
+a {
+    color: #2e86de;
+}
+
+#title {
+    display: block;
+    color: #222f3e;
+    text-decoration: none;
+    margin-bottom: 4.5rem;
+}
+
+#container {
+    max-width: 768px;
+    margin: 0 auto 12rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    margin: 3.5rem 0 1rem;
+}
+
+header > h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+header > .timestamp {
+    color: #999;
+    margin-left: 0.5rem;
+    flex: 2.5 0 25%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    header > .timestamp {
+        font-size: 1.25rem;
+        margin-left: 0;
+    }
+
+    .post-list li {
+        flex-direction: column;
+    }
+}
+
+h2 {
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #eee;
+    border-radius: 2px;
+}
+
+h3 {
+    margin: 4rem 0 1rem;
+}
+
+p {
+    margin: 2rem 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.post-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-list li {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.post-list li a {
+    flex: 7 0 70%;
+    margin-left: 1rem;
+}
+
+.post-date {
+    color: #999;
+    text-align: right;
+    flex: 3 0 30%;
+}
+
+.math.display {
+    text-align: center;
+    display: block;
+    margin: 2em 0;
+}
+
+pre > code {
+    margin: 2em 0;
+    background: #efefef !important;
 }

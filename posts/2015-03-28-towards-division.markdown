@@ -61,12 +61,12 @@ The result needs to be wrapped in a dependent sum, because otherwise we have no 
 
 We can refine our guess in the following way:
 $$
-\begin{align\*}
-a &= bq + r \\\\
-&= b(q + 1 - 1) + r \\\\
-&= b(q + 1) - b + r \\\\
+\begin{align*}
+a &= bq + r \\
+&= b(q + 1 - 1) + r \\
+&= b(q + 1) - b + r \\
 &= b(q + 1) + (r - b)
-\end{align\*}
+\end{align*}
 $$
 
 Since we know that $b \leq r$, the expression $r - b$ will also be a natural number. Stated more conveniently, there exists a value $c : \text{Nat}$ such that $r = b + c$. In the language of type theory, that means we have a function of the following type:
@@ -83,7 +83,7 @@ nextGuess (mkDivStep q prf) gtePrf =
     	(r' ** mkDivStep (S q) ?nextGuessPrf)
 ```
 
-where `?nextGuessPrf` mimics the refinement argument given above. 
+where `?nextGuessPrf` mimics the refinement argument given above.
 
 The only thing left at this point is to combine the two cases together, producing a recursive algorithm:
 

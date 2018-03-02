@@ -8,7 +8,7 @@ One of the examples in the book really stuck out for me &mdash; this post is abo
 A formal language, described informally, is just a set of words that are composed from letters from an alphabet. For example, suppose we have the following alphabet:
 
 $$
-\Sigma = \left\\\{ D, N, E, A \right\\\}
+\Sigma = \left\{ D, N, E, A \right\}
 $$
 
 and that our words are built up inductively from $DED$, $NEN$, and the following rewrite rules:
@@ -43,7 +43,7 @@ So far, everything is all fine and dandy. But the syntax of a language has no me
 
 Suppose that we interpret our language as a logical theory. Every word in the language represents a provable theorem. If that were the case, then a parser for this language would effectively be a [theorem prover](https://en.wikipedia.org/wiki/Automated_theorem_proving) &mdash; given a theorem, is it provable in the theory or not?
 
-The language we described above has one such interpretation. It can be thought of as equations over natural numbers involving [parity](https://en.wikipedia.org/wiki/Parity_(mathematics%29); the addition of two odd numbers is an even number, and so on.
+The language we described above has one such interpretation. It can be thought of as equations over natural numbers involving [parity](https://en.wikipedia.org/wiki/Parity_%28mathematics%29); the addition of two odd numbers is an even number, and so on.
 
 Given that:
 
