@@ -82,3 +82,7 @@ _propositional logic_, it breaks down when you move to [_first-order logic_](htt
 which augments propositional logic with universal and existential quantifiers. Unfortunately,
 there does not exist a similar method for first-order logic, as logical consequence is no longer
 [decidable](https://en.wikipedia.org/wiki/Decidability_%28logic%29).
+
+In short, Zhegalkin polynomials provide an interesting way of looking at propositions. Their simple
+representation permits a straightforward method to determine whether propositions are equivalent.
+However, their application is limited due to the necessity of first-order logic in many situations.
