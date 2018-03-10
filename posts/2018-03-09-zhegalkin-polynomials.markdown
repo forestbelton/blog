@@ -20,7 +20,7 @@ from regular polynomials in the coefficients they take and in the operations use
 
 Coefficients of Zhegalkin polynomials are in $\mathbb{Z}/2\mathbb{Z}$, which represents the
 set of integers modulo 2. Thus, $\mathbb{Z}/2\mathbb{Z}$ has two elements: one that
-represents 0 and another for 1. Addition and multiplication have been replaced with boolean
+represents 0 and another for 1. Multiplication and addition have been replaced with boolean
 [AND](https://en.wikipedia.org/wiki/Logical_conjunction) and
 [XOR](https://en.wikipedia.org/wiki/Exclusive_or), respectively. For example, the polynomial
 $x^2 + x + 1$ represents the boolean operation $\left(x \land x\right) \oplus x \oplus 1$
